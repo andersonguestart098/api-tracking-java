@@ -17,7 +17,7 @@ public record ApiResponse<T>(
 
     }
 
-    public static <T> ApiResponse<T> error(int status, String message, T data, LocalDateTime timestamp) {
+    public static <T> ApiResponse<T> error(int status, String message) {
 
         return new ApiResponse<>(status, message, null, LocalDateTime.now());
 
