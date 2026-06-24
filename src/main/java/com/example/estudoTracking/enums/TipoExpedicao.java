@@ -1,6 +1,6 @@
 package com.example.estudoTracking.enums;
 
-public enum Expedicao {
+public enum TipoExpedicao {
 
     EXPEDICAO,
     EXPEDICAO_DOIS,

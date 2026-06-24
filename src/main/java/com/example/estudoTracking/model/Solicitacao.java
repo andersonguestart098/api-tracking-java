@@ -1,6 +1,6 @@
 package com.example.estudoTracking.model;
 
-import com.example.estudoTracking.enums.Expedicao;
+import com.example.estudoTracking.enums.TipoExpedicao;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
 import lombok.Data;
@@ -40,6 +40,6 @@ public class Solicitacao {
 
     private String nf;
 
-    private Expedicao expedicao;
+    private TipoExpedicao expedicao;
 
 }
