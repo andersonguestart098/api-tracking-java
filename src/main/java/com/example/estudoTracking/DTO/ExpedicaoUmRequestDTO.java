@@ -4,6 +4,8 @@ import com.example.estudoTracking.enums.TipoExpedicao;
 
 public record ExpedicaoUmRequestDTO(
 
-        TipoExpedicao expedicao
+        TipoExpedicao expedicao,
+
+        String nuNota
 
 ) {}

@@ -12,6 +12,8 @@ public class ExpedicaoBase {
     @Id
     private String id;
 
+    private String nuNota;
+
     private LocalDateTime timestamp;
 
     @NotBlank(message = "Expedição não definida!")

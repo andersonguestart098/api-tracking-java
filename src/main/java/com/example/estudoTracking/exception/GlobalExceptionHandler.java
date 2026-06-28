@@ -23,6 +23,14 @@ public class GlobalExceptionHandler {
 
     }
 
+    @ExceptionHandler(ExpedicaoNaoEscolida.class)
+    public ResponseEntity<ApiResponse<Void>> handleExpedicaoN(ExpedicaoNaoEscolida ex) {
+
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                .body(ApiResponse.error(400, ex.getMessage()));
+
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiResponse<Void>> handleGeneric(Exception ex){
 
